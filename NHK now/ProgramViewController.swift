@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class ProgramViewController: UIViewController {
     
@@ -23,6 +24,8 @@ class ProgramViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        HUD.hide()
         
         //放送中の番組情報
         if let nowStart = userDefaults.object(forKey: "nowStart") as? String{
