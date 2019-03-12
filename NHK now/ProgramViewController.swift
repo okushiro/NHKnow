@@ -20,12 +20,17 @@ class ProgramViewController: UIViewController {
     @IBOutlet weak var nextTitleLabel: UITextView!
     @IBOutlet weak var nextSubtitleLabel: UITextView!
     
+    @IBOutlet weak var titleLabel: UINavigationItem!
+    
     let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         HUD.hide()
+        
+        //選択したチャンネル
+        titleLabel.title = (userDefaults.object(forKey: "selectChannel") as! String)
         
         //放送中の番組情報
         if let nowStart = userDefaults.object(forKey: "nowStart") as? String{

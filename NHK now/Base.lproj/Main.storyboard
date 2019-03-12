@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="860" y="133.5832083958021"/>
         </scene>
-        <!--Program View Controller-->
+        <!--Title-->
         <scene sceneID="wYb-TN-Wrs">
             <objects>
                 <viewController id="fjc-Kf-ggB" customClass="ProgramViewController" customModule="NHK_now" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,6 +217,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gXs-aV-Khe"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="s3Y-ID-mtk"/>
                     <connections>
                         <outlet property="nextEndTimeLabel" destination="Jh8-q0-FXb" id="IpY-kh-EJ4"/>
                         <outlet property="nextStartTimeLabel" destination="FcT-dz-8Of" id="tx0-dx-TPH"/>
@@ -226,6 +227,7 @@
                         <outlet property="nowStartTimeLabel" destination="3KW-ZC-Edn" id="NZe-U0-kiU"/>
                         <outlet property="nowSubtitleLabel" destination="JPd-6z-zsw" id="7ez-Ho-eR2"/>
                         <outlet property="nowTitleLabel" destination="9kn-8i-mdL" id="IBH-Nb-pMe"/>
+                        <outlet property="titleLabel" destination="s3Y-ID-mtk" id="Isy-ca-9Jb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyQ-fx-T7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>

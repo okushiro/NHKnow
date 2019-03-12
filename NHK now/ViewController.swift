@@ -66,11 +66,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         areaRow = pickerView.selectedRow(inComponent: 0)
         // 2列目の選択されているrowの取得
         channelRow = pickerView.selectedRow(inComponent: 1)
+        userDefaults.set(channel[channelRow], forKey: "selectChannel")
         
         //URL
         let areaCode = String(format: "%03d", areaRow*10+10)
         let choiceChannel = String(channelCode[channelRow])
-        let url:String = "https://api.nhk.or.jp/v2/pg/now/\(areaCode)/\(choiceChannel).json?key="
+        let url:String = "https://api.nhk.or.jp/v2/pg/now/\(areaCode)/\(choiceChannel).json?key=wK2oJJ29LZjg8j4adykhNm7Imvvkeet1"
         print(url)
         
         //APIの取得
